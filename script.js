@@ -1,3 +1,6 @@
-window.onload = function() {
-	document.getElementById("fade-in").style.opacity = "1";
-}
+window.addEventListener('load', function() {
+  var text = document.getElementById('text');
+  setTimeout(function() {
+    text.classList.add('fade-in');
+  }, 1000);
+});
