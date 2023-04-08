@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Work with Ignas</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<head>
+    <title>Orų prognozė</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  </head>
-  
-  <body>
-    <div class="center">
-      <h1 id="text">Work with Ignas</h1>
-    </div>
-    
+</head>
+<body>
+    <h1>Orų prognozė</h1>
+    <label for="location">Kokios vietovės orus norite patikrinti?</label><br>
+    <input type="text" id="location" name="location"><br><br>
+    <button id="checkButton" disabled>Tikrinti</button>
+    <p id="result"></p>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
