@@ -1,6 +1,14 @@
-window.addEventListener('load', function() {
-  var text = document.getElementById('text');
-  setTimeout(function() {
-    text.classList.add('fade-in');
-  }, 1000);
+const locationInput = document.querySelector('#location');
+const checkButton = document.querySelector('#checkButton');
+const result = document.querySelector('#result');
+
+locationInput.addEventListener('input', () => {
+    checkButton.disabled = !locationInput.value.trim();
+});
+
+checkButton.addEventListener('click', () => {
+    result.textContent = 'Palaukite, kraunama...';
+    setTimeout(() => {
+        result.textContent = 'Idk, pažiūrėk per langą';
+    },3000);
 });
