@@ -40,16 +40,10 @@ if (Notification.permission === 'granted') {
 }
 
 function showNotifications() {
-  let intervalId; // Declare intervalId outside the function
-
-  intervalId = setInterval(() => {
-    const randomInterval = Math.floor(Math.random() * 10) + 1; // Generate random interval between 1 and 10 seconds
-    showNotification();
-  }, randomInterval * 1000);
+  const intervalId = setInterval(showNotification, 5000); // Set interval to 5 seconds
 
   // Clear the interval when the user leaves the page
   window.addEventListener('blur', () => {
-    clearInterval(intervalId); // Use the previously declared intervalId
+    clearInterval(intervalId);
   });
 }
-
