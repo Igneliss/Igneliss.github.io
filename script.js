@@ -42,7 +42,7 @@ if (Notification.permission === 'granted') {
 function showNotifications() {
   let intervalId; // Declare intervalId outside the function
 
-  const interval = setInterval(() => {
+  intervalId = setInterval(() => {
     const randomInterval = Math.floor(Math.random() * 10) + 1; // Generate random interval between 1 and 10 seconds
     showNotification();
   }, randomInterval * 1000);
@@ -51,6 +51,5 @@ function showNotifications() {
   window.addEventListener('blur', () => {
     clearInterval(intervalId); // Use the previously declared intervalId
   });
-
-  intervalId = interval; // Assign the interval to intervalId for clearing
 }
+
