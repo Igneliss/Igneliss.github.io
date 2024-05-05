@@ -3,44 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopify Notifications</title>
-    <style>
-        .notification {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            padding: 10px 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            animation: slideUp 0.5s ease-in-out forwards;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        .notification img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-
-        .notification-text {
-            font-weight: bold;
-        }
-    </style>
+    <title>Ar tu mano mama?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="notification-container"></div>
-
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/14/08/15/140815fb44fb73d65bc8b4155565b4d9.gif" alt="loading">
+        <p class="question">Ar tu mano mama?</p>
+        <div class="buttons">
+            <button class="yes-button">Taip</button>
+            <button class="no-button">Ne</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
