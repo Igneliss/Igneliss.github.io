@@ -73,10 +73,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 mothersDayText.style.marginTop = '25px';
                 mothersDayText.style.fontWeight = 'bold';
                 mothersDayText.style.fontSize = '20px';
+                mothersDayText.style.textAlign = 'center';
 
                 const loremText = document.createElement('p');
                 loremText.textContent = 'Neturėjau laiko nupirkti gėlių ir nieko vakar neradau Akropolyje, tai skyriau laiko sukurti šitą svetainę 😆 Myliuuuuuuuu! 💕 ❤️ 💝 ';
                 loremText.style.marginTop = '0px';
+                loremText.style.textAlign = 'center';
                 loremText.style.fontSize = '18px';
 
                 newScreen2.appendChild(gif2);
