@@ -1,45 +1,44 @@
 body {
-    background-color: wheat;
+    background-color: #FFD1DC;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
-.container {
+#content {
     text-align: center;
 }
 
-.question {
-    font-size: 24px;
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
-button {
+.btn {
+    font-size: 1em;
     padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 20px;
-    cursor: pointer;
+    margin: 10px;
     border: none;
-    margin: 0 10px;
+    cursor: pointer;
 }
 
-.yes-button {
-    background-color: green;
+.green {
+    background-color: #4CAF50;
     color: white;
 }
 
-.no-button {
-    background-color: red;
+.red {
+    background-color: #f44336;
     color: white;
 }
-img {
-    width: 40%;
+
+.light-blue {
+    background-color: #ADD8E6;
+}
+
+.red-bg {
+    background-color: #f44336;
 }
